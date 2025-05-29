@@ -2,6 +2,7 @@ nav {
     background-color: black;
     overflow: hidden;
     text-align: right;
+    width:100vw;
 }
 
 nav a {
