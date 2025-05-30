@@ -1,15 +1,28 @@
 nav {
-    background-color: black;
-    overflow: hidden;
-    text-align: right;
-    width:100vw;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
 }
-
+.navContainer {
+  display: flex;
+  height: 100%;
+}
 nav a {
-    float: right;
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+    display: flex;
+  height: 100%;
+  margin-left: 20px;
+  text-align: center;
+  align-items: center;
+  text-decoration: none;
+  color: rgb(255,255,255);
+  font-size: 24px;
+}
+nav a:hover {
+  background-color: rgb(86, 228, 67);
+}
+h1 {
+  font-size: 30px;
+  color: rgb(0,255,0);
 }

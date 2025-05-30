@@ -6,10 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="./style.css" />
   <style>
+    body
+    {
+      background-image: url("https://picb1.photophoto.cn/27/601/27601831_1.jpg");
+      background-size:cover;
+    }
     .luckContainer {
       position: relative;
-      width: 100vw;
-      height: 100vh;
+      height: 80vh;
       overflow: hidden;
     }
 
@@ -27,10 +31,11 @@
 
     #startGameButton:hover {
       border: 30px solid rgb(0, 255, 0);
+      cursor:pointer;
     }
 
     #startGameButton:active {
-      border: 30px solid rgb(255, 0, 0);
+      border: 30px solid rgb(255, 255, 0);
     }
 
     .image {
@@ -101,7 +106,6 @@
   </style>
   <title>幸運旅行社</title>
 </head>
-
 <body>
   <!-- <form action="/" method="POST"> -->
   <!-- <label for="name">Name:</label> -->
@@ -111,10 +115,16 @@
   <!-- <input type="submit" value="register" /> -->
   <!-- </form> -->
   <nav>
-    <a href="/china">中國</a>
-    <a href="/japan">日本</a>
-    <a href="/korea">韓國</a>
-    <a href="/thailand">泰國</a>
+    <h1>
+      幸運旅行社
+    </h1>
+    <div class="navContainer">
+      <a href="china.html">中國</a>
+      <a href="japan.html">日本</a>
+      <a href="thailand.html">泰國</a>
+      <a href="korea.html">韓國</a>
+      <a href="singapore.html">新加坡</a>
+    </div>
   </nav>
   <div class="luckContainer">
     <img class="image" id="img0"
@@ -128,7 +138,7 @@
       src="https://blog-static.kkday.com/zh-hk/blog/wp-content/uploads/Thailand_Bangkok_City-view_AShutterstock_362127659-1-min-760x510.jpg"
       alt="泰國曼谷" />
     <div class="text">泰國</div>
-    <img class="image" id="img3" src="https://tournews.tw/wp-content/uploads/2024/04/2492281_image2_1.jpg.webp"
+    <img class="image" id="img3" src="https://tournews.tw/wp-content/uploads/2024/04/2492281_image2_1.jpg"
       alt="韓國首爾" />
     <div class="text">韓國</div>
     <img class="image" id="img4"
@@ -166,5 +176,4 @@
     });
   </script>
 </body>
-
 </html>
