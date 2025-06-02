@@ -3,7 +3,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgb(255, 255, 255);
+  background-color:rgb(177, 201, 255);
 }
 .navContainer {
   display: flex;
@@ -20,12 +20,14 @@ nav a {
   font-size: 24px;
 }
 nav a:hover {
-  background-color: rgb(42, 100, 234);
+  background-color: rgb(0, 255, 0);
   color:rgb(255,255,255);
 }
 #homeLink {
   font-size: 40px;
-  color: rgb(0, 255, 0);
+  font-weight:bolod;
+  /* background-color:rgb(103, 148, 252); */
+  color: rgb(0, 0, 255);
 }
 .description{
   background-color: rgb(255,255,255);
