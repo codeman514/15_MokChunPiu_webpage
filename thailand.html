@@ -1,301 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="./style.css" />
-    <style>
-      body {
-        background-image: url("https://vj-prod-website-cms.s3.ap-southeast-1.amazonaws.com/g1-1716175937240.jpg");
-        background-size: cover;
-      }
-    </style>
-    <title>泰國旅遊景點</title>
-  </head>
-  <body>
-    <header>泰國旅遊景點</header>
-    <nav>
-      <a id="homeLink" href="home.html">幸運旅行社</a>
-      <div class="navContainer">
-        <a href="china.html">中國</a>
-        <a href="japan.html">日本</a>
-        <a href="thailand.html">泰國</a>
-        <a href="korea.html">韓國</a>
-        <a href="singapore.html">新加坡</a>
-      </div>
-    </nav>
-    <div class="container mt-4">
-      <div class="row">
-        <div class="col-md-6">
-          <div id="slider1" class="carousel slide mb-5" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img
-                  class="d-block img-fluid"
-                  src="https://res.klook.com/image/upload/c_fill,w_1265,h_712/q_80/w_80,x_15,y_15,g_south_west,l_Klook_water_br_trans_yhcmh3/activities/fhobnjtvfckx1hz2t8bq.webp"
-                  alt="故宮"
-                  width="1000"
-                  height="500"
-                />
-              </div>
-              <div class="carousel-item">
-                <img
-                  class="d-block img-fluid"
-                  src="https://www.beijing.gov.cn/gate/big5/www.beijing.gov.cn/renwen/rwzyd/bwg/ggbwy/202301/W020230302518258966201.jpg"
-                  alt="故宮"
-                  width="1000"
-                  height="500"
-                />
-              </div>
-              <div class="carousel-item">
-                <img
-                  class="d-block img-fluid"
-                  src="https://www.beijing.gov.cn/gate/big5/www.beijing.gov.cn/renwen/rwzyd/bwg/ggbwy/202301/W020230302518259549819.jpg"
-                  alt="故宮"
-                  width="1000"
-                  height="500"
-                />
-              </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./style.css" />
+  <style>
+    body {
+      background-image: url("https://lh3.googleusercontent.com/gps-cs-s/AC9h4nqHAY6bDBSOVoFhmKPyCwYKvBMXjthzZLMLyv_4Y9AMegPpStROHsLtQtRBIA6aANkfTZTegKSr5oVfmjnaOOH-HQtz6Il7Em3eWqqWQiz-xPf_pOBbovOR6SPwWeCFwwJ4zHNbwA=s680-w680-h510-rw");
+      background-size: cover;
+    }
+  </style>
+  <title>泰國旅遊景點</title>
+</head>
+
+<body>
+  <nav>
+    <a id="homeLink" href="home.html">幸運旅行社</a>
+    <div class="navContainer">
+      <a href="china.html">中國</a>
+      <a href="japan.html">日本</a>
+      <a href="thailand.html">泰國</a>
+      <a href="korea.html">韓國</a>
+      <a href="singapore.html">新加坡</a>
+    </div>
+  </nav>
+  <div class="container mt-4">
+    <div class="row">
+      <div class="col-md-6">
+        <div id="slider1" class="carousel slide mb-5" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block img-fluid"
+                src="https://res.klook.com/image/upload/fl_lossy.progressive,q_85/c_fill,w_1000/v1686992579/oadsofiygvpm9afig8xo.webp"
+                alt="大皇宮" width="1000" height="500" />
             </div>
-            <!-- Carousel controls -->
-            <button
-              class="carousel-control-prev"
-              type="button"
-              data-bs-target="#slider1"
-              data-bs-slide="prev"
-            >
-              <span
-                class="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button
-              class="carousel-control-next"
-              type="button"
-              data-bs-target="#slider1"
-              data-bs-slide="next"
-            >
-              <span
-                class="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-            <!-- Carousel indicators -->
-            <div class="carousel-indicators">
-              <button
-                type="button"
-                data-bs-target="#slider1"
-                data-bs-slide-to="0"
-                class="active"
-                aria-current="true"
-                aria-label="Slide 1"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#slider1"
-                data-bs-slide-to="1"
-                aria-label="Slide 2"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#slider1"
-                data-bs-slide-to="2"
-                aria-label="Slide 3"
-              ></button>
+            <div class="carousel-item">
+              <img class="d-block img-fluid"
+                src="https://res.klook.com/images/fl_lossy.progressive,q_65/c_fill,w_1295,h_863/w_80,x_15,y_15,g_south_west,l_Klook_water_br_trans_yhcmh3/activities/b05peznmcquenzwu2la0/%E5%A4%A7%E7%9A%87%E5%AE%AE%EF%BC%86%E7%8E%89%E4%BD%9B%E5%AF%BA%E5%BE%92%E6%AD%A5%E5%B0%8E%E8%A6%BD%E5%8D%8A%E6%97%A5%E9%81%8A%EF%BC%88%E6%9B%BC%E8%B0%B7%E5%87%BA%E7%99%BC%EF%BC%89.webp"
+                alt="玉佛寺" width="1000" height="500" />
+            </div>
+            <div class="carousel-item">
+              <img class="d-block img-fluid"
+                src="https://res.klook.com/images/fl_lossy.progressive,q_65/c_fill,w_1295,h_863/w_80,x_15,y_15,g_south_west,l_Klook_water_br_trans_yhcmh3/activities/g3kex9tsjf5w3tkooer0/%E5%A4%A7%E7%9A%87%E5%AE%AE%EF%BC%86%E7%8E%89%E4%BD%9B%E5%AF%BA%E5%BE%92%E6%AD%A5%E5%B0%8E%E8%A6%BD%E5%8D%8A%E6%97%A5%E9%81%8A%EF%BC%88%E6%9B%BC%E8%B0%B7%E5%87%BA%E7%99%BC%EF%BC%89.webp"
+                alt="大皇宮" width="1000" height="500" />
             </div>
           </div>
-        </div>
-        <div class="col-md-6 description">
-          故宮(紫禁城)位於北京市東城區、天安門北邊、東近王府井大街、西臨中南海，整體建築莊嚴絢麗、金碧輝煌，與凡爾賽宮、白金漢宮、白宮及克裏姆林宮被譽為「世界五大宮」；故宮(紫禁城)占地面積達780,000平方公尺，周圍環繞高10公尺的城牆及52公尺的護城河，城南東西寬753公尺、南北長961公尺，平面呈長方形，東西南北各設城門一座，其中北面的神武門和南面的午門專供遊客參觀出入。
-          故宮(紫禁城)是明、清兩代皇宮及擁有眾多珍藏的歷史文物建立而成的綜合性博物館，在漢代故宮(紫禁城)叫「紫宮」，由於這裡屬於皇家重地，一般人不可以隨便進入因此又稱「禁地」，唐代時期將「紫宮」與「禁地」合在一起使用，因此稱為紫禁城；明代皇帝朱棣就位後，遷都北京即開始營造宮殿，建於明永樂4年、於18年落成，在這明清兩代前後五百餘年中，共有24位皇帝曾在紫禁城裡居住及對全國實行統治，不僅是君主重要決策場地，更是中國重要的宮殿建築，於1961年被列為首批「重點文物保護單位」之一，1987年被列入「世界文化遺產名錄」，是北京著名的標誌性景點之一。
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-6 description">
-          萬里長城東起河北山海關、西至甘肅嘉峪關，全長約6000多公里，素有「地扼襟喉趨溯漠，天留鎖鑰枕雄關」之譽，建於戰國時期，歷經秦、漢、明等朝代的擴建，是世界上修建時間最長，也是中國史上重要雄偉的國家軍事性防禦工程之一；萬里長城是全球少見的巨型結構，除了在軍事上有重要的功能以外，更是中國氣候、地域、農物的天然分界點，在1987年長城被列入「世界文化遺產」，壯觀的建築與寬闊的景象成為北京旅遊的熱門觀光景點。
-          萬里長城的建築特色
-          萬里長城的構建以「因地制宜」為基本法則，運用地理天險來防禦敵方，不僅節省建築材料而且又利於防守；萬里長城主要由關隘、城牆和樓台、烽燧所組成，「關隘」是邊界上的要塞隘口、「城牆」與「樓台」具有進出關口、觀察指揮和防禦敵方的功能、「烽燧」即烽火台作為傳遞情報之用，另外還有城障、僵落和虎落等防禦設施，讓萬里長城的防禦功能達到最大功效。萬里長城的修築從春秋戰國到明末歷代修建的技術及方式有不相同，在北魏時代是磚石結構的長城，而明代則是磚砌、石砌及磚石混砌，所以各段長城皆擁有不同獨特風格的面貌，吸引許多遊客前來觀光，體驗北京長城的塞內外風光。
-        </div>
-        <div class="col-md-6">
-          <div id="slider2" class="carousel slide mb-5" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img
-                  class="d-block img-fluid"
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/The_Great_Wall_of_China_at_Jinshanling-edit.jpg/500px-The_Great_Wall_of_China_at_Jinshanling-edit.jpg"
-                  alt="萬里長城"
-                  width="1000"
-                  height="500"
-                />
-              </div>
-              <div class="carousel-item">
-                <img
-                  class="d-block img-fluid"
-                  src="https://photo.travelking.com.tw/scenery/8E2CB1CE-1313-40AE-83B8-4A21E8E68C8F_e.jpg"
-                  alt="萬里長城"
-                  width="1000"
-                  height="500"
-                />
-              </div>
-              <div class="carousel-item">
-                <img
-                  class="d-block img-fluid"
-                  src="https://photo.travelking.com.tw/scenery/AB179C78-56F0-4C34-843F-5FF4DEA38E7E_e.jpg"
-                  alt="萬里長城"
-                  width="1000"
-                  height="500"
-                />
-              </div>
-            </div>
-            <button
-              class="carousel-control-prev"
-              type="button"
-              data-bs-target="#slider2"
-              data-bs-slide="prev"
-            >
-              <span
-                class="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button
-              class="carousel-control-next"
-              type="button"
-              data-bs-target="#slider2"
-              data-bs-slide="next"
-            >
-              <span
-                class="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-            <div class="carousel-indicators">
-              <button
-                type="button"
-                data-bs-target="#slider2"
-                data-bs-slide-to="0"
-                class="active"
-                aria-current="true"
-                aria-label="Slide 2"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#slider2"
-                data-bs-slide-to="1"
-                aria-label="Slide 2"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#slider2"
-                data-bs-slide-to="2"
-                aria-label="Slide 3"
-              ></button>
-            </div>
+          <!-- Carousel controls -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#slider1" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#slider1" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+          <!-- Carousel indicators -->
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#slider1" data-bs-slide-to="0" class="active" aria-current="true"
+              aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#slider1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#slider1" data-bs-slide-to="2" aria-label="Slide 3"></button>
           </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-md-6">
-          <div id="slider3" class="carousel slide mb-5" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img
-                  class="d-block img-fluid"
-                  src="https://ak-d.tripcdn.com/images/1mi0e2215e34xa11s2CBC_W_640_0_R5_Q80.jpg?proc=source/trip"
-                  alt="兵馬俑"
-                  width="1000"
-                  height="500"
-                />
-              </div>
-              <div class="carousel-item">
-                <img
-                  class="d-block img-fluid"
-                  src="https://ak-d.tripcdn.com/images/1mi1y2234a9v9fjdd3DAD_W_640_0_R5_Q80.jpg?proc=source/trip"
-                  alt="兵馬俑"
-                  width="1000"
-                  height="500"
-                />
-              </div>
-              <div class="carousel-item">
-                <img
-                  class="d-block img-fluid"
-                  src="https://image.cdn-eztravel.com.tw/JinVGqDe2wpCtPurjiFofWExeaxMluUdIOuxnav8etk/g:ce/aHR0cHM6Ly92YWNhdGlvbi5jZG4tZXp0cmF2ZWwuY29tLnR3L2ltZy9WRFIvQ05fNDI2NjE2OTAuanBn.jpg"
-                  alt="兵馬俑"
-                  width="1000"
-                  height="500"
-                />
-              </div>
+      <div class="col-md-6 description">
+        <h1>大皇宮&玉佛寺</h1>
+        位於昭披耶河畔的玉佛寺和大皇宮是一定要朝聖的曼谷景點，一邊是雄偉壯觀的曼谷皇室建築、另一邊又是金碧輝煌莊嚴無比的佛教聖地。玉佛寺建於1782年，是泰國曼谷王朝開朝時期的拉馬一世所建，寺內供奉著由拉瑪一世王迎請入寺的泰國國寶「玉佛像」，而「大皇宮」雖然目前沒有皇室成員居住，卻依舊會在這兩個地點舉行皇家重要的儀式，或是用來接待外賓的場所，在泰國人心目中是非常神聖而且重要的地方。指標性景點人潮爆滿，碧隆天神殿、各式佛像雕刻、夜叉王也是亮點之一。但也因為玉佛寺與大皇宮對於泰國人來說是非常神聖且重要政經信仰中心，參觀務必遵守相關規定，嚴禁穿短褲、短裙、背心、拖鞋等露肩腿，違者會拒絕入場。
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6 description">
+        <h1>素可泰歷史公園</h1>
+        素可泰歷史公園Sukhothai Historical
+        Park，位於泰北地區，是泰國第1個王朝首都遺址，同時也是泰國文化的發源地，如今的泰文與上座部佛教皆在此發跡。歷史公園於1988年對外開放，1991年被聯合國教科文組織認證為世界文化遺產。歷史公園佔地達70平方公里，共分為
+        5區，總共有190處以上的歷史遺跡留存。超越700年歷史的古蹟群雖斑駁殘缺，仍可見當時素可泰王國的繁華壯大，是泰國藝術繪畫、雕刻、建築和文學愛好者的朝聖之地。
+      </div>
+      <div class="col-md-6">
+        <div id="slider2" class="carousel slide mb-5" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block img-fluid" src="https://bangkok.tmtravel.com.tw/upload/images/20190409043041.jpg"
+                alt="素可泰歷史公園" width="1000" height="500" />
             </div>
-            <!-- Carousel controls -->
-            <button
-              class="carousel-control-prev"
-              type="button"
-              data-bs-target="#slider3"
-              data-bs-slide="prev"
-            >
-              <span
-                class="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button
-              class="carousel-control-next"
-              type="button"
-              data-bs-target="#slider3"
-              data-bs-slide="next"
-            >
-              <span
-                class="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-            <!-- Carousel indicators -->
-            <div class="carousel-indicators">
-              <button
-                type="button"
-                data-bs-target="#slider1"
-                data-bs-slide-to="0"
-                class="active"
-                aria-current="true"
-                aria-label="Slide 1"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#slider1"
-                data-bs-slide-to="1"
-                aria-label="Slide 2"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#slider1"
-                data-bs-slide-to="2"
-                aria-label="Slide 3"
-              ></button>
+            <div class="carousel-item">
+              <img class="d-block img-fluid"
+                src="https://ak-d.tripcdn.com/images/100l0t000000i9l8e5718_C_1200_800_Q70.jpg?proc=source%2ftrip"
+                alt="素可泰歷史公園" width="1000" height="500" />
+            </div>
+            <div class="carousel-item">
+              <img class="d-block img-fluid"
+                src="https://ak-d.tripcdn.com/images/10010t000000imcl68753_C_1200_800_Q70.jpg?proc=source%2ftrip"
+                alt="素可泰歷史公園" width="1000" height="500" />
             </div>
           </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#slider2" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#slider2" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#slider2" data-bs-slide-to="0" class="active" aria-current="true"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#slider2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#slider2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
         </div>
-        <div class="col-md-6 description">
-          秦始皇陵兵馬俑，位於今陝西省西安市臨潼區秦始皇陵以東1.5千米處的兵馬俑坑內，被稱為世界第八大奇跡，第一批中國世界遺，是中國古代輝煌文明的一張金字名片。
-          兵馬俑是古代墓葬雕塑的一個類別。古代施行人殉，奴隸是奴隸主生前的附屬品，奴隸主死後奴隸要作為殉葬品為奴隸主陪葬。兵馬俑即製成兵馬（戰車、戰馬、士兵）形狀的殉葬品。
-          秦兵馬俑是以俑代人殉葬的典型，也是以俑代人殉葬的頂峰。秦俑之所以在規模、寫實程度上達到如此的高度，與歷史上第一個封建皇帝秦始皇的意志是分不開的。喜歡中國文化歷史的朋友，絕對不能錯過這個舉世聞名的世界奇跡了。
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div id="slider3" class="carousel slide mb-5" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block img-fluid" src="https://www.bring-you.info/imgs/2018/02/chiangmai-travel-guide-17.jpg"
+                alt="清邁古城" width="1000" height="500" />
+            </div>
+            <div class="carousel-item">
+              <img class="d-block img-fluid" src="https://www.bring-you.info/imgs/2018/02/chiangmai-travel-guide-15.jpg"
+                alt="清邁古城" width="1000" height="500" />
+            </div>
+            <div class="carousel-item">
+              <img class="d-block img-fluid"
+                src="https://followus2travel.com/wp-content/uploads/2025/03/Wat-Chedi-Luang1.webp" alt="清邁古城"
+                width="1000" height="500" />
+            </div>
+          </div>
+          <!-- Carousel controls -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#slider3" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#slider3" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+          <!-- Carousel indicators -->
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#slider1" data-bs-slide-to="0" class="active" aria-current="true"
+              aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#slider1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#slider1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
         </div>
+      </div>
+      <div class="col-md-6 description">
+        <h1>清邁古城</h1>
+        清邁市中心的古城保護區，便是蘭納王朝的遺址，蘭納王朝在清邁建立了城牆、護城河和許多佛寺。其中必訪塔佩門與柴迪隆寺，周邊充滿道地小吃、手工藝品攤販、夜市等。每到11月舉辦的清邁國際水燈節，施放萬盞天燈與水燈，壯觀繁星般地燈火，更是聲名遠播的世界級美景。
       </div>
     </div>
     <script>
@@ -307,4 +166,4 @@
       });
     </script>
   </body>
-</html>
+  </html>
