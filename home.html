@@ -4,13 +4,18 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+    crossorigin="anonymous"></script>
   <link rel="stylesheet" href="./style.css" />
   <style>
-    body
-    {
+    body {
       background-image: url("https://picb1.photophoto.cn/27/601/27601831_1.jpg");
-      background-size:cover;
+      background-size: cover;
     }
+
     .luckContainer {
       position: relative;
       height: 85vh;
@@ -31,7 +36,7 @@
 
     #startGameButton:hover {
       border: 30px solid rgb(0, 255, 0);
-      cursor:pointer;
+      cursor: pointer;
     }
 
     #startGameButton:active {
@@ -73,49 +78,45 @@
     }
 
     .text {
-      position: absolute;
-      font-size: 24px;
-      color: rgb(255, 255, 255);
-    }
+    position: absolute;
+    font-size: 24px;
+    text-align: center;
+  }
 
-    .text:nth-of-type(1) {
-      top: 10%;
-      left: 50%;
-      transform: translateX(-50%);
-    }
+  .text:nth-of-type(1) {
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
 
-    .text:nth-of-type(2) {
-      top: 35%;
-      right: 20%;
-    }
+  .text:nth-of-type(2) {
+    top: 30%;
+    right: 20%;
+  }
 
-    .text:nth-of-type(3) {
-      bottom: 25%;
-      right: 30%;
-    }
+  .text:nth-of-type(3) {
+    bottom: 20%;
+    right: 30%;
+  }
 
-    .text:nth-of-type(4) {
-      bottom: 25%;
-      left: 30%;
-    }
+  .text:nth-of-type(4) {
+    bottom: 20%;
+    left: 30%;
+  }
 
-    .text:nth-of-type(5) {
-      top: 35%;
-      left: 20%;
-    }
+  .text:nth-of-type(5) {
+    top: 30%;
+    left: 20%;
+    transform: translate(-50%, 0);
+  }
   </style>
-  <title>幸運旅行社</title>
+  <title>幸運旅遊網</title>
 </head>
+
 <body>
-  <!-- <form action="/" method="POST"> -->
-  <!-- <label for="name">Name:</label> -->
-  <!-- <input name="name" id="name" /> -->
-  <!-- <label for="password">Password:</label> -->
-  <!-- <input name="password" id="password" /> -->
-  <!-- <input type="submit" value="register" /> -->
-  <!-- </form> -->
   <nav>
-    <a id="homeLink" href="home.html">幸運旅行社</a>
+    <a id="homeLink" href="home.html">幸運旅遊網</a>
+    <h5 id="homeIntroduction">為您介紹各國旅遊景點</h5>
     <div class="navContainer">
       <a href="china.html">中國</a>
       <a href="japan.html">日本</a>
@@ -137,17 +138,25 @@
       src="https://blog-static.kkday.com/zh-hk/blog/wp-content/uploads/Thailand_Bangkok_City-view_AShutterstock_362127659-1-min-760x510.jpg"
       alt="泰國曼谷" />
     <div class="text">泰國</div>
-    <img class="image" id="img3" src="https://tournews.tw/wp-content/uploads/2024/04/2492281_image2_1.jpg"
-      alt="韓國首爾" />
+    <img class="image" id="img3"
+    src="https://tournews.tw/wp-content/uploads/2024/04/2492281_image2_1.jpg"
+    alt="韓國首爾" />
     <div class="text">韓國</div>
     <img class="image" id="img4"
-      src="https://s35891.pcdn.co/wp-content/uploads/shutterstock_610935047-1600x1069.jpg.webp"
+    src="https://s35891.pcdn.co/wp-content/uploads/shutterstock_610935047-1600x1069.jpg.webp"
       alt="新加坡" />
     <div class="text">新加坡</div>
-    <button id="startGameButton">抽機票!</button>
+    <button id="startGameButton">旅遊唔知去邊度?<br>試下點呢度!</button>
   </div>
   <script>
     let colorBorderIndex = 0;
+    let linkList = [
+      {name:"中國",url:"china.html"},
+      {name:"日本",url:"japan.html"},
+      {name:"泰國",url:"thailand.html"},
+      {name:"韓國",url:"korea.html"},
+      {name:"新加坡",url:"singapore.html"}
+    ];
     function changeImageBorderColor() {
       for (i = 0; i < 5; i++) {
         //重置所有圖片的邊框顏色為灰
@@ -155,11 +164,12 @@
           "30px solid rgb(199, 198, 198)";
       }
       //設定目前圖片的邊框顏色為綠色
+      colorBorderIndex = (colorBorderIndex + 1) % 5;
       document.getElementById("img" + colorBorderIndex).style.border =
         "30px solid rgb(0, 255, 0)";
-      colorBorderIndex = (colorBorderIndex + 1) % 5;
     }
     let isStartingGame = false;
+    let startGameButton = document.getElementById("startGameButton");
     let slowChangeInterval = setInterval(changeImageBorderColor, 1000);
     let fastChangeInterval;
     document.getElementById("startGameButton").addEventListener("click", function () {
@@ -167,13 +177,15 @@
         isStartingGame = true;
         clearInterval(slowChangeInterval);
         fastChangeInterval = setInterval(changeImageBorderColor, 50);
+        startGameButton.textContent = "點擊停止"
       }
       else {
-        isStartingGame = false;
         clearInterval(fastChangeInterval);
-        slowChangeInterval = setInterval(changeImageBorderColor, 1000);
+        setTimeout(function(){window.location.href = linkList[colorBorderIndex].url},2000)
+        startGameButton.textContent = "抽到去"+ linkList[colorBorderIndex].name+"旅遊!";
       }
     });
   </script>
 </body>
+
 </html>
