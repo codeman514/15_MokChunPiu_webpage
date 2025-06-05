@@ -1,178 +1,342 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./style.css" />
+    <style>
+      body {
+        background-image: url("https://lh3.googleusercontent.com/gps-cs-s/AC9h4nqHAY6bDBSOVoFhmKPyCwYKvBMXjthzZLMLyv_4Y9AMegPpStROHsLtQtRBIA6aANkfTZTegKSr5oVfmjnaOOH-HQtz6Il7Em3eWqqWQiz-xPf_pOBbovOR6SPwWeCFwwJ4zHNbwA=s680-w680-h510-rw");
+        background-size: cover;
+      }
+    </style>
+    <title>泰國旅遊景點</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous" />
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
-    crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="./style.css" />
-  <style>
-    body {
-      background-image: url("https://lh3.googleusercontent.com/gps-cs-s/AC9h4nqHAY6bDBSOVoFhmKPyCwYKvBMXjthzZLMLyv_4Y9AMegPpStROHsLtQtRBIA6aANkfTZTegKSr5oVfmjnaOOH-HQtz6Il7Em3eWqqWQiz-xPf_pOBbovOR6SPwWeCFwwJ4zHNbwA=s680-w680-h510-rw");
-      background-size: cover;
-    }
-  </style>
-  <title>泰國旅遊景點</title>
-</head>
-
-<body>
-  <nav>
-    <a id="homeLink" href="home.html">幸運旅遊網</a>
-    <h5 id="homeIntroduction">為您介紹各國旅遊景點</h5>
-    <div class="navContainer">
-      <a href="china.html">中國</a>
-      <a href="japan.html">日本</a>
-      <a href="thailand.html">泰國</a>
-      <a href="korea.html">韓國</a>
-      <a href="singapore.html">新加坡</a>
-    </div>
-  </nav>
-  <header class="display-1 text-center">
-    泰國
-  </header>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6">
-        <div id="slider1" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img class="d-block img-fluid"
-                src="https://res.klook.com/image/upload/fl_lossy.progressive,q_85/c_fill,w_1000/v1686992579/oadsofiygvpm9afig8xo.webp"
-                alt="大皇宮" width="1000" height="500" />
+  <body>
+    <nav>
+      <a id="homeLink" href="home.html">幸運旅遊網</a>
+      <h5 id="homeIntroduction">為您介紹各國旅遊景點</h5>
+      <div class="navContainer">
+        <a href="china.html">中國</a>
+        <a href="japan.html">日本</a>
+        <a href="thailand.html">泰國</a>
+        <a href="korea.html">韓國</a>
+        <a href="singapore.html">新加坡</a>
+      </div>
+    </nav>
+    <header class="display-1 text-center">泰國</header>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div id="slider1" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  class="d-block img-fluid"
+                  src="https://res.klook.com/image/upload/fl_lossy.progressive,q_85/c_fill,w_1000/v1686992579/oadsofiygvpm9afig8xo.webp"
+                  alt="大皇宮"
+                  width="1000"
+                  height="500"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  class="d-block img-fluid"
+                  src="https://res.klook.com/images/fl_lossy.progressive,q_65/c_fill,w_1295,h_863/w_80,x_15,y_15,g_south_west,l_Klook_water_br_trans_yhcmh3/activities/b05peznmcquenzwu2la0/%E5%A4%A7%E7%9A%87%E5%AE%AE%EF%BC%86%E7%8E%89%E4%BD%9B%E5%AF%BA%E5%BE%92%E6%AD%A5%E5%B0%8E%E8%A6%BD%E5%8D%8A%E6%97%A5%E9%81%8A%EF%BC%88%E6%9B%BC%E8%B0%B7%E5%87%BA%E7%99%BC%EF%BC%89.webp"
+                  alt="玉佛寺"
+                  width="1000"
+                  height="500"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  class="d-block img-fluid"
+                  src="https://res.klook.com/images/fl_lossy.progressive,q_65/c_fill,w_1295,h_863/w_80,x_15,y_15,g_south_west,l_Klook_water_br_trans_yhcmh3/activities/g3kex9tsjf5w3tkooer0/%E5%A4%A7%E7%9A%87%E5%AE%AE%EF%BC%86%E7%8E%89%E4%BD%9B%E5%AF%BA%E5%BE%92%E6%AD%A5%E5%B0%8E%E8%A6%BD%E5%8D%8A%E6%97%A5%E9%81%8A%EF%BC%88%E6%9B%BC%E8%B0%B7%E5%87%BA%E7%99%BC%EF%BC%89.webp"
+                  alt="大皇宮"
+                  width="1000"
+                  height="500"
+                />
+              </div>
             </div>
-            <div class="carousel-item">
-              <img class="d-block img-fluid"
-                src="https://res.klook.com/images/fl_lossy.progressive,q_65/c_fill,w_1295,h_863/w_80,x_15,y_15,g_south_west,l_Klook_water_br_trans_yhcmh3/activities/b05peznmcquenzwu2la0/%E5%A4%A7%E7%9A%87%E5%AE%AE%EF%BC%86%E7%8E%89%E4%BD%9B%E5%AF%BA%E5%BE%92%E6%AD%A5%E5%B0%8E%E8%A6%BD%E5%8D%8A%E6%97%A5%E9%81%8A%EF%BC%88%E6%9B%BC%E8%B0%B7%E5%87%BA%E7%99%BC%EF%BC%89.webp"
-                alt="玉佛寺" width="1000" height="500" />
-            </div>
-            <div class="carousel-item">
-              <img class="d-block img-fluid"
-                src="https://res.klook.com/images/fl_lossy.progressive,q_65/c_fill,w_1295,h_863/w_80,x_15,y_15,g_south_west,l_Klook_water_br_trans_yhcmh3/activities/g3kex9tsjf5w3tkooer0/%E5%A4%A7%E7%9A%87%E5%AE%AE%EF%BC%86%E7%8E%89%E4%BD%9B%E5%AF%BA%E5%BE%92%E6%AD%A5%E5%B0%8E%E8%A6%BD%E5%8D%8A%E6%97%A5%E9%81%8A%EF%BC%88%E6%9B%BC%E8%B0%B7%E5%87%BA%E7%99%BC%EF%BC%89.webp"
-                alt="大皇宮" width="1000" height="500" />
+            <!-- Carousel controls -->
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#slider1"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#slider1"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+            <!-- Carousel indicators -->
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#slider1"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#slider1"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#slider1"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
             </div>
           </div>
-          <!-- Carousel controls -->
-          <button class="carousel-control-prev" type="button" data-bs-target="#slider1" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#slider1" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-          <!-- Carousel indicators -->
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#slider1" data-bs-slide-to="0" class="active" aria-current="true"
-              aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#slider1" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#slider1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="col-md-6 description">
+          <h1>大皇宮&玉佛寺</h1>
+          位於昭披耶河畔的玉佛寺和大皇宮是一定要朝聖的曼谷景點，一邊是雄偉壯觀的曼谷皇室建築、另一邊又是金碧輝煌莊嚴無比的佛教聖地。玉佛寺建於1782年，是泰國曼谷王朝開朝時期的拉馬一世所建，寺內供奉著由拉瑪一世王迎請入寺的泰國國寶「玉佛像」，而「大皇宮」雖然目前沒有皇室成員居住，卻依舊會在這兩個地點舉行皇家重要的儀式，或是用來接待外賓的場所，在泰國人心目中是非常神聖而且重要的地方。指標性景點人潮爆滿，碧隆天神殿、各式佛像雕刻、夜叉王也是亮點之一。但也因為玉佛寺與大皇宮對於泰國人來說是非常神聖且重要政經信仰中心，參觀務必遵守相關規定，嚴禁穿短褲、短裙、背心、拖鞋等露肩腿，違者會拒絕入場。
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/F9rEeP13pug?si=NtdtjAxYoLlH2ho4"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 description">
+          <h1>素可泰歷史公園</h1>
+          素可泰歷史公園Sukhothai Historical
+          Park，位於泰北地區，是泰國第1個王朝首都遺址，同時也是泰國文化的發源地，如今的泰文與上座部佛教皆在此發跡。歷史公園於1988年對外開放，1991年被聯合國教科文組織認證為世界文化遺產。歷史公園佔地達70平方公里，共分為
+          5區，總共有190處以上的歷史遺跡留存。
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/CVtAcOS63cg?si=UT3EykRAyIRPu2Xg"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="col-md-6">
+          <div id="slider2" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  class="d-block img-fluid"
+                  src="https://bangkok.tmtravel.com.tw/upload/images/20190409043041.jpg"
+                  alt="素可泰歷史公園"
+                  width="1000"
+                  height="500"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  class="d-block img-fluid"
+                  src="https://ak-d.tripcdn.com/images/100l0t000000i9l8e5718_C_1200_800_Q70.jpg?proc=source%2ftrip"
+                  alt="素可泰歷史公園"
+                  width="1000"
+                  height="500"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  class="d-block img-fluid"
+                  src="https://ak-d.tripcdn.com/images/10010t000000imcl68753_C_1200_800_Q70.jpg?proc=source%2ftrip"
+                  alt="素可泰歷史公園"
+                  width="1000"
+                  height="500"
+                />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#slider2"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#slider2"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#slider2"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#slider2"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#slider2"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
           </div>
         </div>
       </div>
-      <div class="col-md-6 description">
-        <h1>大皇宮&玉佛寺</h1>
-        位於昭披耶河畔的玉佛寺和大皇宮是一定要朝聖的曼谷景點，一邊是雄偉壯觀的曼谷皇室建築、另一邊又是金碧輝煌莊嚴無比的佛教聖地。玉佛寺建於1782年，是泰國曼谷王朝開朝時期的拉馬一世所建，寺內供奉著由拉瑪一世王迎請入寺的泰國國寶「玉佛像」，而「大皇宮」雖然目前沒有皇室成員居住，卻依舊會在這兩個地點舉行皇家重要的儀式，或是用來接待外賓的場所，在泰國人心目中是非常神聖而且重要的地方。指標性景點人潮爆滿，碧隆天神殿、各式佛像雕刻、夜叉王也是亮點之一。但也因為玉佛寺與大皇宮對於泰國人來說是非常神聖且重要政經信仰中心，參觀務必遵守相關規定，嚴禁穿短褲、短裙、背心、拖鞋等露肩腿，違者會拒絕入場。
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/F9rEeP13pug?si=NtdtjAxYoLlH2ho4"
-          title="YouTube video player" frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-6 description">
-        <h1>素可泰歷史公園</h1>
-        素可泰歷史公園Sukhothai Historical
-        Park，位於泰北地區，是泰國第1個王朝首都遺址，同時也是泰國文化的發源地，如今的泰文與上座部佛教皆在此發跡。歷史公園於1988年對外開放，1991年被聯合國教科文組織認證為世界文化遺產。歷史公園佔地達70平方公里，共分為
-        5區，總共有190處以上的歷史遺跡留存。
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/CVtAcOS63cg?si=UT3EykRAyIRPu2Xg"
-          title="YouTube video player" frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-      </div>
-      <div class="col-md-6">
-        <div id="slider2" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img class="d-block img-fluid" src="https://bangkok.tmtravel.com.tw/upload/images/20190409043041.jpg"
-                alt="素可泰歷史公園" width="1000" height="500" />
+      <div class="row">
+        <div class="col-md-6">
+          <div id="slider3" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  class="d-block img-fluid"
+                  src="https://www.bring-you.info/imgs/2018/02/chiangmai-travel-guide-17.jpg"
+                  alt="清邁古城"
+                  width="1000"
+                  height="500"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  class="d-block img-fluid"
+                  src="https://www.bring-you.info/imgs/2018/02/chiangmai-travel-guide-15.jpg"
+                  alt="清邁古城"
+                  width="1000"
+                  height="500"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  class="d-block img-fluid"
+                  src="https://followus2travel.com/wp-content/uploads/2025/03/Wat-Chedi-Luang1.webp"
+                  alt="清邁古城"
+                  width="1000"
+                  height="500"
+                />
+              </div>
             </div>
-            <div class="carousel-item">
-              <img class="d-block img-fluid"
-                src="https://ak-d.tripcdn.com/images/100l0t000000i9l8e5718_C_1200_800_Q70.jpg?proc=source%2ftrip"
-                alt="素可泰歷史公園" width="1000" height="500" />
-            </div>
-            <div class="carousel-item">
-              <img class="d-block img-fluid"
-                src="https://ak-d.tripcdn.com/images/10010t000000imcl68753_C_1200_800_Q70.jpg?proc=source%2ftrip"
-                alt="素可泰歷史公園" width="1000" height="500" />
+            <!-- Carousel controls -->
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#slider3"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#slider3"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+            <!-- Carousel indicators -->
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#slider1"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#slider1"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#slider1"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
             </div>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#slider2" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#slider2" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#slider2" data-bs-slide-to="0" class="active" aria-current="true"
-              aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#slider2" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#slider2" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          </div>
+        </div>
+        <div class="col-md-6 description">
+          <h1>清邁古城</h1>
+          清邁市中心的古城保護區，便是蘭納王朝的遺址，蘭納王朝在清邁建立了城牆、護城河和許多佛寺。其中必訪塔佩門與柴迪隆寺，周邊充滿道地小吃、手工藝品攤販、夜市等。每到11月舉辦的清邁國際水燈節，施放萬盞天燈與水燈，壯觀繁星般地燈火，更是聲名遠播的世界級美景。
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/CgfbeTV5Mj8?si=u7SN1EYzzD3VYOr1"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
         </div>
       </div>
     </div>
-    <div class="row">
-      <div class="col-md-6">
-        <div id="slider3" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img class="d-block img-fluid" src="https://www.bring-you.info/imgs/2018/02/chiangmai-travel-guide-17.jpg"
-                alt="清邁古城" width="1000" height="500" />
-            </div>
-            <div class="carousel-item">
-              <img class="d-block img-fluid" src="https://www.bring-you.info/imgs/2018/02/chiangmai-travel-guide-15.jpg"
-                alt="清邁古城" width="1000" height="500" />
-            </div>
-            <div class="carousel-item">
-              <img class="d-block img-fluid"
-                src="https://followus2travel.com/wp-content/uploads/2025/03/Wat-Chedi-Luang1.webp" alt="清邁古城"
-                width="1000" height="500" />
-            </div>
-          </div>
-          <!-- Carousel controls -->
-          <button class="carousel-control-prev" type="button" data-bs-target="#slider3" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#slider3" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-          <!-- Carousel indicators -->
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#slider1" data-bs-slide-to="0" class="active" aria-current="true"
-              aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#slider1" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#slider1" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 description">
-        <h1>清邁古城</h1>
-        清邁市中心的古城保護區，便是蘭納王朝的遺址，蘭納王朝在清邁建立了城牆、護城河和許多佛寺。其中必訪塔佩門與柴迪隆寺，周邊充滿道地小吃、手工藝品攤販、夜市等。每到11月舉辦的清邁國際水燈節，施放萬盞天燈與水燈，壯觀繁星般地燈火，更是聲名遠播的世界級美景。
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/CgfbeTV5Mj8?si=u7SN1EYzzD3VYOr1"
-          title="YouTube video player" frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-      </div>
-    </div>
+    <footer class="text-center">
+      @ 2025 幸運旅遊網
+      <br />
+      聯絡電話:1234 5678
+      <br />
+      email:LuckyTrip@gmail.com
+    </footer>
     <script>
       $(".carousel").carousel({
         interval: 3000,
@@ -181,6 +345,5 @@
         wrap: true,
       });
     </script>
-</body>
-
+  </body>
 </html>
